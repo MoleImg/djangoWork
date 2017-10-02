@@ -19,5 +19,5 @@ from hello import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/$', views.hello),
+    url(r'^hello/(?P<time_set>\d{2})', views.hello),
 ]
